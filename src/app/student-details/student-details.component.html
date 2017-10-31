@@ -1,0 +1,24 @@
+<div class="card top-buffer" *ngIf="student">
+  <div class="card-body">
+<div class="card-title">{{student.Name}} {{student.Prezime}}</div>
+    <div class="row top-buffer">
+      <div class="col-md-6">
+<ul>
+  <li>{{student.Indeks}}</li>
+  <li>{{student.Nasoka}}</li>
+</ul>
+      </div>
+<div class="row top-buffer">
+<div class="col-md-11 text-right"
+     [routerLink]="['/edit',student.Indeks]" >
+  <button class="btn btn-primary clickable">
+    Edit
+  </button>
+
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+
